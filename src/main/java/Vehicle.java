@@ -1,4 +1,4 @@
-class Vehicle {
+public class Vehicle {
     private int vin;
     private int year;
     private String make;
@@ -18,8 +18,6 @@ class Vehicle {
         this.odometer = odometer;
         this.price = price;
     }
-
-    // Getters and setters for all fields
 
     public int getVin() {
         return vin;
@@ -83,5 +81,19 @@ class Vehicle {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vin=" + vin +
+                ", year=" + year +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", vehicleType='" + vehicleType + '\'' +
+                ", color='" + color + '\'' +
+                ", odometer=" + odometer +
+                ", price=" + price +
+                '}';
     }
 }
